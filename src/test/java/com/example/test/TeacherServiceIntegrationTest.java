@@ -13,7 +13,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.example.persistence.domain.Teacher;
-import com.example.rest.dto.TeacherDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest
