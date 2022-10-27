@@ -25,7 +25,7 @@ public class CourseService {
 		return this.mapper.map(course, CourseDto.class);
 	}
 
-	// Creates a course DTO.
+	// Creates a course DTO
 	public CourseDto addCourse(Course course) {
 		Course saved = this.repo.save(course);
 		return this.mapToDTO(saved);
@@ -36,7 +36,7 @@ public class CourseService {
 		return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
 	}
 
-	// Update course (found by id) with new course data.
+	// Update course (found by id) with new course data
 	public CourseDto updateCourse(Long courseId, Course course) {
 		Optional<Course> tempAcc = this.repo.findById(courseId);
 
@@ -65,6 +65,7 @@ public class CourseService {
 		return this.mapToDTO(found);
 	}
 
+	// Find course by its respective teacher
 	public List<CourseDto> findByTeacher(Long teacherId) {
 		List<Course> found = this.repo.findCourseByTeacher(teacherId);
 		List<CourseDto> foundDto = new ArrayList<>();

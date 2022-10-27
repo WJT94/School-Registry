@@ -26,8 +26,6 @@ public class TeacherService
 		return this.mapper.map(teacher, TeacherDto.class);
 	}
 	
-//	------------------CRUD------------------
-	
 	// Create a teacher dto
 	public TeacherDto addTeacher(Teacher teacher)
 	{
