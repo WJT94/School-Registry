@@ -24,7 +24,6 @@ public interface CourseRepository extends JpaRepository<Course, Long>
 	// Find course by teacher
 	@Query("select c from Course c where c.teacher=?1")
 	List<Course> findCourseByTeacher(Long teacherId);
-
 	
 	// Find course by start date
 	@Query("select c from Course c where c.startDate=?1")

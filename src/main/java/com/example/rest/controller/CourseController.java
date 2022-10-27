@@ -49,6 +49,11 @@ public class CourseController {
 		return this.service.findById(id);
 	}
 
+	@GetMapping("/readname/{name}")
+	public List<CourseDto> readByName(@PathVariable String name) {
+		return this.service.findByName(name);
+	}
+
 	// Read course by start date
 	@GetMapping("/readstartdate/{startDate}")
 	public List<CourseDto> readByStartDate(@PathVariable String startDate) {

@@ -65,6 +65,12 @@ public class CourseService {
 		return this.mapToDTO(found);
 	}
 
+	// Find by course name
+	public List<CourseDto> findByName(String name) {
+		List<Course> found = this.repo.findCourseByName(name);
+		return found.stream().map(this::mapToDTO).collect(Collectors.toList());
+	}
+
 	// Find course by its respective teacher
 	public List<CourseDto> findByTeacher(Long teacherId) {
 		List<Course> found = this.repo.findCourseByTeacher(teacherId);
