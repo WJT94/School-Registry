@@ -35,27 +35,66 @@ _The application is designed to be implemented into a school's server, where tea
 4. You can now create HTTP requests to the database. Examples are shown in the images below.
 
 ### Project Structure
-
+<img src=".md/CodeStructure.png">
 
 ### Database Model
-
+<img src=".md/DatabaseModel.png">
 
 ### HTTP Requests
+All requests:<br>
+<img width="600" src=".md/postman/AllRequests.png">
+
+Create teacher<br>
+<img width="600" src=".md/postman/TeacherCreate.png">
+
+Read all teachers<br>
+<img width="600" src=".md/postman/TeacherRead.png">
+
+Read teacher by ID<br>
+<img width="600" src=".md/postman/TeacherReadID.png">
+
+Read teacher(s) by name<br>
+<img width="600" src=".md/postman/TeacherReadName.png">
+
+Update teacher by ID<br>
+<img width="600" src=".md/postman/TeacherUpdate.png">
+
+Delete teacher by ID<br>
+<img width="600" src=".md/postman/TeacherDelete.png">
+
+Create course<br>
+<img width="600" src=".md/postman/CourseCreate.png">
+
+Read all courses<br>
+<img width="600" src=".md/postman/CourseRead.png">
+
+Read course by ID<br>
+<img width="600" src=".md/postman/CourseReadID.png">
+
+Read course(s) by name<br>
+<img width="600" src=".md/postman/CourseReadName.png">
+
+Update course by ID<br>
+<img width="600" src=".md/postman/CourseUpdate.png">
+
+Delete course by ID<br>
+<img width="600" src=".md/postman/CourseDelete.png">
 
 
 ### Testing
-
+<img src=".md/TestList.png">
 
 ### Tools Used
 * Java 8
 * Spring Boot 2.7.0
 * MySQL 8.0.30
 * Maven 4.0.0
+* Visual Studio Code 1.72.2
 * Github
 * Jira
 
 ### Reflection
-Overall the application came together well. As this project involves me learning Java, there were a few pitfalls involving datatypes and object-oriented-programming in general that I struggled to understand at first. Many of the functioning parts of this application are very abstract, which made it difficult at times for me to visualize the sequence of methods in the program. Fortunately, modern IDEs are very good at handling this problem.
+Overall the application came together well. As this project involves me learning Java, there were a few pitfalls involving datatypes and object-oriented-programming in general that I struggled to understand at first. Many of the functioning parts of this application are very abstract, which made it difficult at times for me to visualize the sequence of methods in the program. Fortunately, modern IDEs are very good at handling this problem, and helped me to better understand Java as a whole.
 
 Possible improvements would be mostly based on implementing new features. A real school registry would likely require another table for students, and another table for the grades/marks the students receive in individual courses. Through this, other functionality to could be present, all the way down to individual assignments having registered scores, teacher comments, or other details, allowing this to serve as the backend for a truly exhaustive registry for a school.
 
