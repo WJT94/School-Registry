@@ -15,7 +15,7 @@ public class TeacherRestControllerTest
 	private TeacherController controller;
 	
 	@Test
-	public void controllerInitCorrectly() //Checks that REST controller has been initialised
+	public void controllerHasInitialised() //Checks that the REST controller has been initialised
 	{
 		assertThat(controller).isNotNull();
 	}

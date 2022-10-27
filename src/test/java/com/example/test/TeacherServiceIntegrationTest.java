@@ -13,13 +13,14 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.example.persistence.domain.Teacher;
+import com.example.rest.dto.TeacherDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest
 @AutoConfigureMockMvc
 public class TeacherServiceIntegrationTest
 {
-	/*
+	
 	@Autowired
 	private MockMvc mock;
 	
@@ -37,12 +38,10 @@ public class TeacherServiceIntegrationTest
 		mockRequest.accept(MediaType.APPLICATION_JSON);
 		
 		ResultMatcher matchStatus = MockMvcResultMatchers.status().isCreated();
-		//ResultMatcher matchContent = MockMvcResultMatchers.content().json(this.objectMapper.writeValueAsString(CreateTeacherDto.class));
 		
 		this.mock
 			.perform(mockRequest)
 			.andExpect(matchStatus);
-			//.andExpect(matchContent);
 	}
-	*/
+	
 }

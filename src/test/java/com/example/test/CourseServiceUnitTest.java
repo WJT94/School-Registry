@@ -30,8 +30,8 @@ public class CourseServiceUnitTest
 	@MockBean
 	private CourseRepository repo;
 
-	/*
-	final Course SAVED_COURSE = new Course();
+	
+	final Course SAVED_COURSE = new Course(1L, "French Literature", null, "01/01/1997", "24/03/1997");
 	
 	@Test
 	void testCreate() throws Exception
@@ -50,9 +50,9 @@ public class CourseServiceUnitTest
 	{
 		given(repo.save(any(Course.class))).willReturn(SAVED_COURSE);
 		
-		Course SAVED_COURSE = repo.save(SAVED_COURSE);
+		Course TEST_SAVED_COURSE = repo.save(SAVED_COURSE);
 		
-		assertThat(SAVED_COURSE.getcourseNumber()).isNotNull();
+		assertThat(TEST_SAVED_COURSE.getId()).isNotNull();
 	}
 	
 	@Test
@@ -93,5 +93,5 @@ public class CourseServiceUnitTest
 		
 		verify(repo, times(2)).deleteById(id);
 	}
-	*/
+	
 }

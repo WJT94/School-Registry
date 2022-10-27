@@ -8,7 +8,7 @@ import com.example.persistence.domain.Course;
 public class TeacherDto // DTOs are not entirely necessary, as no sensitive information is mapped in the
 						// responses either way.
 {
-	private String id;
+	private Long id;
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -19,11 +19,11 @@ public class TeacherDto // DTOs are not entirely necessary, as no sensitive info
 
 	
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	
